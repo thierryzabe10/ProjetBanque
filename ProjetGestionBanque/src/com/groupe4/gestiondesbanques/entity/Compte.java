@@ -21,7 +21,8 @@ import javax.persistence.TemporalType;
 /**
  * 
  * @author inti0299
- *
+ *classe:Compte
+ *date :30/06/2016
  */
 
 @Entity
@@ -43,10 +44,19 @@ public abstract class Compte implements Serializable {
 	@JoinColumn(name="compte_banque")
 	private Banque banque;
 	@OneToMany(mappedBy="compte")
-	private Collection<Operation> listeDesOperations= new ArrayList<Operation>();
+	private Collection<Operation> listeDesOperations;
+	@ManyToOne
+	@JoinColumn(name="listeDesComptes")
+	private Employe employe;
 	
 	// ------- Get & Set -------- //
 	
+	public Employe getEmploye() {
+		return employe;
+	}
+	public void setEmploye(Employe employe) {
+		this.employe = employe;
+	}
 	public Long getNumero() {
 		return numero;
 	}
