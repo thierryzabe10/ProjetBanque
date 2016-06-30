@@ -1,5 +1,16 @@
 package com.groupe4.gestiondesbanques.entity;
 
-public class BanqueLCL {
+import javax.persistence.DiscriminatorValue;
+import javax.persistence.Entity;
+
+/**
+ * 
+ * @author inti0298
+ *classe:Banque LCL
+ *date :30/06/2016
+ */
+@Entity
+@DiscriminatorValue("LCL")
+public class BanqueLCL extends Banque {
 
 }

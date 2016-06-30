@@ -19,7 +19,8 @@ import javax.persistence.TemporalType;
 /**
  * 
  * @author inti0299
- *
+*classe:client
+ *date :30/06/2016
  */
 @Entity
 public class Client implements Serializable {
@@ -32,7 +33,7 @@ public class Client implements Serializable {
 	private Date dateDeNaissance;
 	private String adressePostale;
 	@OneToMany(mappedBy="client")
-	private Collection<Compte> listeDesComptes = new ArrayList<Compte>();
+	private Collection<Compte> listeDesComptes;
 	@ManyToOne
 	@JoinColumn(name="cli_banque")
 	private Banque banque;
