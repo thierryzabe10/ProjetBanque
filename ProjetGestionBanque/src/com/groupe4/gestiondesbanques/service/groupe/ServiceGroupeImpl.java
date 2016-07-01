@@ -6,12 +6,8 @@ import java.util.logging.Logger;
 import com.groupe4.gestiondesbanques.dao.groupe.IDaoGroupe;
 import com.groupe4.gestiondesbanques.entity.Groupe;
 
-import java.util.List;
 
-import org.apache.log4j.Logger;
 
-import com.groupe4.gestiondesbanques.dao.groupe.IDaoGroupe;
-import com.groupe4.gestiondesbanques.entity.Groupe;
 
 public class ServiceGroupeImpl implements IServiceGroupe{
 	private IDaoGroupe daoGroupe;
@@ -32,6 +28,12 @@ public class ServiceGroupeImpl implements IServiceGroupe{
 	@Override
 	public List<Groupe> ConsulterLaListeDesGroupes() {
 		return daoGroupe.ConsulterLaListeDesGroupes();
+	}
+
+
+	@Override
+	public void AddEmployeToGroupe(Long codeEmploye, Long codeGroupe) {
+		
 	}
 
 }
