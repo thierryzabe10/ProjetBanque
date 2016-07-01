@@ -2,7 +2,7 @@ package com.groupe4.gestiondesbanques.service.compte;
 
 import java.util.List;
 
-import org.apache.log4j.Logger;
+import java.util.logging.Logger;
 
 import com.groupe4.gestiondesbanques.dao.compte.IDaoCompte;
 import com.groupe4.gestiondesbanques.entity.Compte;

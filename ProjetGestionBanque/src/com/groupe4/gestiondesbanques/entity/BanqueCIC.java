@@ -13,4 +13,16 @@ import javax.persistence.Entity;
 @DiscriminatorValue("CIC")
 public class BanqueCIC extends Banque {
 
+	public BanqueCIC() {
+		super();
+		
+	}
+
+	public BanqueCIC(String nomAgence, String adresse, String codePostale) {
+		super(nomAgence, adresse, codePostale);
+
+	}
+	
+	
+
 }

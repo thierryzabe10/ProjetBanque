@@ -13,4 +13,16 @@ import javax.persistence.Entity;
 @DiscriminatorValue("BNP")
 public class BanqueBNP extends Banque {
 
+	public BanqueBNP() {
+		super();
+		
+	}
+
+	public BanqueBNP(String nomAgence, String adresse, String codePostale) {
+		super(nomAgence, adresse, codePostale);
+		
+	}
+	
+	
+
 }

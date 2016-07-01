@@ -14,7 +14,10 @@ import javax.persistence.Entity;
 @DiscriminatorValue("CC")
 public class CompteCourant extends Compte {
 	/*attributs*/
-	private double decouvert;
+	private double decouvert =-300;
+
+	
+/*constructeurs*/
 
 	public double getDecouvert() {
 		return decouvert;
@@ -23,7 +26,6 @@ public class CompteCourant extends Compte {
 	public void setDecouvert(double decouvert) {
 		this.decouvert = decouvert;
 	}
-/*constructeurs*/
 
 	public CompteCourant() {
 		super();

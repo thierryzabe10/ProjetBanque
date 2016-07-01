@@ -1,5 +1,13 @@
 package com.groupe4.gestiondesbanques.dao.banque;
 
-public interface IdaoBanque {
+import java.util.List;
 
+import com.groupe4.gestiondesbanques.entity.Banque;
+import com.groupe4.gestiondesbanques.entity.Compte;
+
+public interface IdaoBanque {
+	public Banque AjouterUneBanque(Banque b);
+	public List<Compte> GetListCompteFromBanque(Long idBanque);
+	public void addCompteToBanque(Long numero, Long idBanque);
+	
 }

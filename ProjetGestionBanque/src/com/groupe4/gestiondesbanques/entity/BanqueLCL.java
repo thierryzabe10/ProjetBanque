@@ -13,4 +13,16 @@ import javax.persistence.Entity;
 @DiscriminatorValue("LCL")
 public class BanqueLCL extends Banque {
 
+	public BanqueLCL() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+
+	public BanqueLCL(String nomAgence, String adresse, String codePostale) {
+		super(nomAgence, adresse, codePostale);
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+
 }

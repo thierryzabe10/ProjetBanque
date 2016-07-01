@@ -15,14 +15,14 @@ import javax.persistence.ManyToMany;
  *classe:Groupe
  *date :30/06/2016
  */
+@SuppressWarnings("serial")
 @Entity
 public class Groupe implements Serializable{
 	@Id
 	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long codeGroupe;
 	private String nomGroupe;
-	@ManyToMany
-	@JoinTable(name="EMP_GRPE")
+	@ManyToMany(mappedBy="listeDesGroupes")
 	private Collection<Employe>listeDesEmployes;
 	/*get et set*/
 	public Long getCodeGroupe() {

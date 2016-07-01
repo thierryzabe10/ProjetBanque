@@ -1,5 +1,10 @@
 package com.groupe4.gestiondesbanques.exception;
 
-public class RetraitException {
+@SuppressWarnings("serial")
+public class RetraitException extends Exception{
+
+	public RetraitException(String info) {
+		super(info);
+	}
 
 }

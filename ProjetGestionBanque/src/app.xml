@@ -5,32 +5,32 @@
 	
 	<bean id="cl" class="com.groupe4.gestiondesbanques.dao.client.DaoClientImpl"></bean>
 	<bean id="serviceClient" class="com.groupe4.gestiondesbanques.service.client.ServiceClientImpl">
-		<property name="daoclient" ref="cl"></property>
+		<property name="daoClient" ref="cl"></property>
 	</bean>
 	
-	<bean id="b" class="com.groupe4.gestiondesbanques.dao.banque.DaoBanqueImpl"></bean>
+	<!--bean id="b" class="com.groupe4.gestiondesbanques.dao.banque.DaoBanqueImpl"></bean>
 	<bean id="serviceBanque" class="com.groupe4.gestiondesbanques.service.banque.ServiceBanqueImpl">
-		<property name="daobanque" ref="b"></property>
-	</bean>
+		<property name="dao" ref="b"></property>
+	</bean-->
 	
 	<bean id="co" class="com.groupe4.gestiondesbanques.dao.compte.DaoCompteImpl"></bean>
 	<bean id="serviceCompte" class="com.groupe4.gestiondesbanques.service.compte.ServiceCompteImpl">
-		<property name="daocompte" ref="co"></property>
+		<property name="da" ref="co"></property>
 	</bean>
 	
-	<bean id="e" class="com.groupe4.gestiondesbanques.dao.employe.DaoEmployeImpl"></bean>
+	<!--  bean id="e" class="com.groupe4.gestiondesbanques.dao.employe.DaoEmployeImpl"></bean>
 	<bean id="serviceEmploye" class="com.groupe4.gestiondesbanques.service.employe.ServiceEmployeImpl">
-		<property name="daoemploye" ref="e"></property>
+		<property name="dao" ref="e"></property>
 	</bean>
 	
 	<bean id="g" class="com.groupe4.gestiondesbanques.dao.groupe.DaoGroupeImpl"></bean>
 	<bean id="serviceGroupe" class="com.groupe4.gestiondesbanques.service.groupe.ServiceGroupeImpl">
-		<property name="daogroupe" ref="g"></property>
-	</bean>
+		<property name="dao" ref="g"></property>
+	</bean-->
 	
 	<bean id="o" class="com.groupe4.gestiondesbanques.dao.operation.DaoOperationImpl"></bean>
 	<bean id="serviceOperation" class="com.groupe4.gestiondesbanques.service.operation.ServiceOperationImpl">
-		<property name="daooperation" ref="o"></property>
+		<property name="daoOperation" ref="o"></property>
 	</bean>
 
 </beans>

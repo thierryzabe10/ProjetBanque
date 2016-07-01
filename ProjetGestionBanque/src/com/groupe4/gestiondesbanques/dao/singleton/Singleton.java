@@ -1,6 +1,6 @@
 package com.groupe4.gestiondesbanques.dao.singleton;
 
-import org.apache.log4j.Logger;
+import java.util.logging.Logger;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
@@ -18,10 +18,12 @@ public class Singleton {
 	private Singleton() {
 		
 	}
-	public static SessionFactory getSessfionfactory() {
+	public static SessionFactory getSessionfactory() {
 		return sessionfactory;
 	}
-
+	
+	
+	
 	
 	
 
